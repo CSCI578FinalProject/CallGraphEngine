@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JCallGraph",
+            "request": "launch",
+            "mainClass": "gr.gousiosg.javacg.stat.JCallGraph",
+            "projectName": "javacg"
+        }
+    ]
+}
