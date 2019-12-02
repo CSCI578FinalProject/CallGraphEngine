@@ -16,3 +16,5 @@ java -jar target/javacg-0.1-SNAPSHOT-static.jar -n {input_dir} > {output_file_na
 // to generate call graph with method parameters not populated, this is used for our project 
 java -jar target/javacg-0.1-SNAPSHOT-static.jar -dn {input_dir} > {output_file_name}
 ```
+## Notice
+This app has only been tested on Windows. Mac users may need to change the directory spliter from `\` to `/`
