@@ -1,5 +1,5 @@
 # CallGraphEngine
-## What does this repositiory do?
+## What is this repository
 ## How?
 ## Input
 ## Ouput
