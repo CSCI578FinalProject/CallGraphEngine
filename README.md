@@ -9,10 +9,10 @@ The jar files of the two target systems, Tomcat 6.0 and 8.5, are in "tomcat60" a
 the output files are the txt files that start with "call_graph".
 ## How to Run?
 in the root directory, do:
-``
-mvn install \n
+```
+mvn install
 // to generate call graph with method parameters populated \n
 java -jar target/javacg-0.1-SNAPSHOT-static.jar -n {input_dir} > {output_file_name} \n
 // to generate call graph with method parameters not populated, this is used for our project \n
 java -jar target/javacg-0.1-SNAPSHOT-static.jar -dn {input_dir} > {output_file_name}
-``
+```
