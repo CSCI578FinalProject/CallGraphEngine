@@ -6,9 +6,9 @@ The static analysis code will go through each function in the jar files and esta
 ## Input
 The jar files of the two target systems, Tomcat 6.0 and 8.5, are in "tomcat60" and "tomcat85" respectively.
 ## Ouput
-the output files are the txt files that start with "call_graph".
+The output files are the txt files that start with "call_graph".
 ## How to Run?
-in the root directory, do:
+In the root directory, do:
 ```
 mvn install
 // to generate call graph with method parameters populated 
@@ -16,3 +16,6 @@ java -jar target/javacg-0.1-SNAPSHOT-static.jar -n {input_dir} > {output_file_na
 // to generate call graph with method parameters not populated, this is used for our project 
 java -jar target/javacg-0.1-SNAPSHOT-static.jar -dn {input_dir} > {output_file_name}
 ```
+
+##Notice: 
+The ouput of this tool is not compatible with ACDC, so we have created a script `convert.py`. To run it, just go in to the code and change the input and output file name, do `python converter.py`.
