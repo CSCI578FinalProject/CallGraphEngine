@@ -16,6 +16,7 @@ java -jar target/javacg-0.1-SNAPSHOT-static.jar -n {input_dir} > {output_file_na
 // to generate call graph with method parameters not populated, this is used for our project 
 java -jar target/javacg-0.1-SNAPSHOT-static.jar -dn {input_dir} > {output_file_name}
 ```
-
 ##Notice: 
-The ouput of this tool is not compatible with ACDC, so we have created a script `convert.py`. To run it, just go in to the code and change the input and output file name, do `python converter.py`.
+1) The ouput of this tool is not compatible with ACDC, so we have created a script `convert.py`. To run it, just go in to the code and change the input and output file name, do `python converter.py`.
+
+2) This app has only been tested on Windows. Mac users may need to change the directory spliter from `\` to `/`
